@@ -1,0 +1,422 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background: rgb(218,218,218);
+    margin: 0;
+    padding: 0;
+    font: 14px/18px Arial, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+a:active,
+a:hover {outline: 0;}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+ul {list-style: none;}
+
+.bold {font-weight: bold; font-size: 18px;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {clear: both;}
+.left {float: left;}
+.right {float: right;}
+/*=== ОБЩИЕ СТИЛИ ===*/
+
+.head {
+    background: rgb(43,43,43);
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.header {
+    width: 983px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header ul:first-child {
+    padding-top: 10px;
+    margin-right: 30px;
+}
+
+.header ul {
+    padding-top: 15px;
+    display: inline-block; 
+    float: left;
+}
+
+.header ul li {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.header .first {
+    padding-left: 0;
+}
+
+.header .last { margin-right: 15px;}
+
+.header .background{
+    background: rgb(30,30,30);
+    padding-right: 20px;
+    margin-right: 28px;
+    height: 100%;
+} 
+
+#wrapper {
+    width: 983px;
+    margin: 0 auto;
+    background: rgb(255,255,255);
+}
+
+.trending {
+    box-shadow: 0 -1px 3px #999;
+    border-top: 10px solid rgb(0,136,204);
+    border-bottom: 2px solid rgb(41,41,41);
+    margin-bottom: 10px;
+}
+
+.trending ul {
+    display: inline-block;
+}
+
+.trending h2 {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    background: rgb(41,41,41);
+    padding: 5px 24px 5px 24px
+}
+
+.trending ul li {
+    display: inline-block;
+    padding: 0px 0 0px 25px;
+}
+.trending ul li:first-child { padding-left: 0;}
+
+.trending ul li a {
+    color: rgb(0,0,0);
+    font-size: 13px;
+}
+.trending li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 0px 10px 20px 10px;
+    border-bottom: 6px solid rgb(218,218,218);
+}
+
+.leftSide {
+    width: 64.6%;
+    float: left;
+}
+.leftSide h2 {
+    margin-top: 35px;
+}
+#slideshow {
+  width: 100%;
+  position: relative;
+}
+#slideContainer {
+  width: 99.74%;
+  position: relative;
+  overflow: auto;
+  height: auto; 
+}
+.slide {
+  margin: 0 auto;
+  width: 620px;
+  height: 350px;
+}
+.control {
+  padding: 7px;
+  position: absolute;
+  color: rgb(220,220,220);
+  top: 145px;
+  cursor: pointer;
+  background: rgba(0,0,0,.85);
+  border-radius: 3px;
+}
+#leftControl {left: 4px; font-size: 1.7em;}
+#rightControl {left: 568px; font-size: 1.7em;}
+
+.slideTransparent {
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 269.5px;
+  left:0;
+  color: white;
+  display: none;
+}
+
+
+.slideTransparent a {
+    font-size: 25.5px;
+}
+
+
+.news {margin-bottom: 20px;}
+.newsBlock {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 12px;
+}
+.logoNews{
+    float: left;
+    width: 42.7%;
+    margin-right: 12px;
+    margin-top: 30px;
+}
+.aboutNews {
+    float: left;
+    width: 55.3%;
+    margin-top: 20px;
+}
+.topNewsSpan {
+    color: #999;
+    font-size: .85em;
+}
+.aboutNews a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: block;
+    margin: 12px 0;
+}
+.aboutNews a:hover {color: #39c;}
+.aboutNews p {
+    color: #292929;
+    font-size: .9em;
+    margin-bottom: 12px;
+}
+.date {
+    font-size: .7em;
+    color: #333333;
+}
+#seeMore {
+    color: white;
+    text-align: center;
+    width: 100%;
+    background: #007ab7;
+    border-radius: 5px;
+    padding: 10px;
+}
+#seeMore:hover {
+    background: #005580;
+    cursor: pointer;
+}
+
+
+
+.rightSide {
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 33.6%;
+    float: right;
+}
+.follow {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 90px;
+}
+
+.rightSide h2,
+.leftSide h2 {
+    border-bottom: 2px solid rgb(0,136,204);
+    font-size: 14px;
+    color: rgb(51,51,51);
+    font-style: italic;
+}
+
+.rightSide ul {
+    padding-top: 20px;
+}
+
+.rightSide ul li {
+    float: left;
+}
+
+.discussiedMost .first {margin-top: 20px;}
+
+.discBl {
+    margin-top: 12px;
+    border-bottom: 1px solid #eaeaea;
+/*    height: auto;*/
+    
+}
+.discBl img {
+    margin-right: 14px;
+    float: left;
+    height: auto;
+}
+
+.discBl .article span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.underPost {
+    padding-top: 2px;
+    font-size: 0.7em;
+    color: #333333
+}
+
+.underPost a {
+    color: rgb(0,136,204);
+    padding-left: 3px;
+}
+.underPost a:hover {text-decoration: underline;}
+.underPost span {padding-right: 3px;}
+
+
+.ltstComments {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.forumCmnt {
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+}
+
+.avaOfUser {
+    float: left;
+    margin-right: 15px;
+    width: 25%;
+}
+.avaOfUser img {height: auto;}
+
+.comment {
+    float: left;
+    width: 69%;
+}
+.comment p {
+    line-height: 1em;
+    font-size: 12.5px;
+}
+.comment span {
+    font-weight: bold;
+    font-size: 11px;
+    margin-right: 3px;
+}
+.comment a {
+    color: rgb(0,136,204);
+    font-size: 10px;
+}
+
+.latestGames {}
+
+.releaseAndSoon .btn1,
+.releaseAndSoon .btn2{
+    border: none;
+    width: 48.9%;
+    background-color: #292929;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.releaseAndSoon .btn1:hover,
+.releaseAndSoon .btn2:hover {background: rgb(0,136,204);}
+.releaseAndSoon .btn2 {float: right;}
+
+.games {margin-bottom: 3px;}
+.game {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+}
+.game img {
+    height: auto;
+    margin-right: 5px;
+}
+.game a {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+.game a:hover {color: rgb(0,136,204);}
+.game span.release {
+    color: #292929;
+    font-weight: normal;
+    float: right;
+    margin-top: 21px;
+}
+.release {margin-left: 28.6%;}
+
+
+
+.footer {
+    clear:both;
+    height: 65px;
+    border-top: 6px solid rgb(77,199,240);
+    background: rgb(51,51,51);
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+.innerFooter {
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4px 0;
+    box-shadow: 0 -1px 3px #999;
+}
+.innerFooter ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.innerFooter ul li a {
+    color: rgb(161,161,161);
+    font-size: 13px;
+}
+.innerFooter ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
